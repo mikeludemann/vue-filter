@@ -4,6 +4,6 @@ Vue.filter('uppercasefirst', function (value) {
 
     value = value.toString();
 
-    return value ? value.split(' ').map(function (character) { return character.characterarAt(0).toUpperCase() + character.substring(1); }).join(' ') : value;
+    return value ? value.split(' ').map(function (character) { return character.charAt(0).toUpperCase() + character.substring(1); }).join(' ') : value;
 
 })
